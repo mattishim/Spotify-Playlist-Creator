@@ -38,4 +38,5 @@ for tracks in top_tracks:
     track_uris = [track['uri'] for track in tracks if track['uri'] not in added_tracks]
     added_tracks.update([t['uri'] for t in tracks])
     sp.playlist_add_items(new_playlist['id'], track_uris)
-            
+
+print("Done")

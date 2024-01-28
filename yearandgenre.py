@@ -49,6 +49,8 @@ else:
     track_uris = [track['uri'] for track in sorted_tracks]
     sp.playlist_add_items(new_playlist['id'], track_uris)
 
+    print("Done")
+
 
 
 

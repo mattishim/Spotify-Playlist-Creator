@@ -11,19 +11,19 @@ Spotify Account with Developer Access
 ### Setup
 1. Clone the repository and navigate to the python-testing directory.
 
-2. Install the spotipy module using the following command: ```pip install spotipy --upgrade```
+2. Install the spotipy module using the following command: ```pip install spotipy --upgrade```. (If you don't have pip installed run ```sudo apt install python3-pip```)
 
 3. Follow the instructions in the Spotify Developer Dashboard to create a new app and retrieve a client ID and client secret. In your settings for your app you can add this to your redirect url: ```https://localhost:8000/callback```
 
-4. In the python-testing directory, create a new file called .env and add the following lines, replacing CLIENT_ID and CLIENT_SECRET with your actual client ID and secret.
+4. In the terminal, enter your CLIENT_ID, CLIENT_SECRET, and REDIRECT_URI. You can do this by entering the following commands:
 
 ```python
-SPOTIPY_CLIENT_ID=CLIENT_ID
-SPOTIPY_CLIENT_SECRET=CLIENT_SECRET
-SPOTIPY_REDIRECT_URI=https://localhost:8000/callback
+export SPOTIPY_CLIENT_ID="CLIENT_ID"
+export SPOTIPY_CLIENT_SECRET="CLIENT_SECRET"
+export SPOTIPY_REDIRECT_URI="https://localhost:8000/callback"
 ```
 
-5. Run the script using the following command: ```python topsongs.py```
+5. Run the script using the following command: ```python topsongs.py```. When running for the first time, you will have to enter the URL that opens in your web browser when prompted
 
 ### Usage
 1. Enter the name of the playlist you want to use as input when prompted.
@@ -49,15 +49,15 @@ Spotify Account with Developer Access
 
 3. Follow the instructions in the Spotify Developer Dashboard to create a new app and retrieve a client ID and client secret. In your settings for your app you can add this to your redirect url: ```https://localhost:8000/callback```
 
-4. In the python-testing directory, create a new file called .env and add the following lines, replacing CLIENT_ID and CLIENT_SECRET with your actual client ID and secret. (Skip this step if already done)
+4. In the terminal, enter your CLIENT_ID, CLIENT_SECRET, and REDIRECT_URI. You can do this by entering the following commands:
 
 ```python
-SPOTIPY_CLIENT_ID=CLIENT_ID
-SPOTIPY_CLIENT_SECRET=CLIENT_SECRET
-SPOTIPY_REDIRECT_URI=https://localhost:8000/callback
+export SPOTIPY_CLIENT_ID="CLIENT_ID"
+export SPOTIPY_CLIENT_SECRET="CLIENT_SECRET"
+export SPOTIPY_REDIRECT_URI="https://localhost:8000/callback"
 ```
 
-5. Run the script using the following command: ```python yearandgenre.py```
+5. Run the script using the following command: ```python yearandgenre.py```. When running for the first time, you will have to enter the URL that opens in your web browser when prompted
 
 ### Usage
 1. Enter the year and genre you want to use when prompted. (It will reccomend random ones if you can't think of any)
@@ -81,15 +81,15 @@ Spotify Account with Developer Access
 
 3. Follow the instructions in the Spotify Developer Dashboard to create a new app and retrieve a client ID and client secret. In your settings for your app you can add this to your redirect url: ```https://localhost:8000/callback```
 
-4. In the python-testing directory, create a new file called .env and add the following lines, replacing CLIENT_ID and CLIENT_SECRET with your actual client ID and secret.
+4. In the terminal, enter your CLIENT_ID, CLIENT_SECRET, and REDIRECT_URI. You can do this by entering the following commands:
 
 ```python
-SPOTIPY_CLIENT_ID=CLIENT_ID
-SPOTIPY_CLIENT_SECRET=CLIENT_SECRET
-SPOTIPY_REDIRECT_URI=https://localhost:8000/callback
+export SPOTIPY_CLIENT_ID="CLIENT_ID"
+export SPOTIPY_CLIENT_SECRET="CLIENT_SECRET"
+export SPOTIPY_REDIRECT_URI="https://localhost:8000/callback"
 ```
 
-5. Run the script using the following command: ```python similar.py```
+5. Run the script using the following command: ```python similar.py```. When running for the first time, you will have to enter the URL that opens in your web browser when prompted
 
 ### Usage
 1. Enter the name of the artist you want to use when prompted.

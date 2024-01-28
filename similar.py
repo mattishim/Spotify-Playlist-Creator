@@ -44,6 +44,8 @@ else:
         top_tracks = sp.artist_top_tracks(i['id'])['tracks'][: + int(amount_tracks)]
         for t in top_tracks:
             sp.playlist_add_items(new_playlist['id'], [t['uri']])
+
+    print("Done")
         
     
 
